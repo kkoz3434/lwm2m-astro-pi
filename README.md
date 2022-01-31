@@ -9,9 +9,8 @@ There has been defined and exposed one LWM2M object with three instances corresp
 - Planet we are currently at (using atmospheric data collected by sensors)
 
 # Implementation
-Business logic we implemented is mainly in 5670 Resource Handler.
-It computes a LWM2M response to the client's request.
-5671 and 3456 Resource Handlers are implemented as well, they return a response of name and unit of our resources.
+Business logic we implemented is mainly in 5670 Resource Handler. It computes a LWM2M response to the client's request.
+5751 Handler gives the sensor type. 
 
 # Authors
 @koszar91, ...
