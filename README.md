@@ -11,7 +11,7 @@ There has been defined and exposed one LWM2M object (3300, Generic Sensor) with 
 
 # Implementation
 Implementation of these resources takes place in python files called ResourceHandlers.
-- ResourceHandler no. 5700 is responsible for computing actual values. It contains business logic and computes it depending on instance_id passed as an argument to the read() function
+- SensorValue ResourceHandler no. 5700 is responsible for computing actual values. It contains business logic and computes it depending on instance_id passed as an argument to the read() function
 - ResourceHandler 5750 represents an application type and contains description of every instance
 - ResourceHandler 5701 represents the sensor units, so it defines the meaning of values returned by sensor value ResourceHandler
 
