@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+# -*- encoding: utf-8 -*-
+
+from fsdm import ResourceHandler, CoapError, DataType, KvStore
+
+
+class ResourceHandler_3300_5751(ResourceHandler):
+    NAME = "Sensor Type"
+    DESCRIPTION = '''\
+The type of the sensor (for instance PIR type).'''
+    DATATYPE = DataType.STRING
+    EXTERNAL_NOTIFY = False
+
+    def read(self,
+             instance_id,            # int
+             resource_instance_id):  # int for multiple resources, None otherwise
+        # TODO: print value to stdout
+        print("TODO")
+
+
+
+
+if __name__ == '__main__':
+    ResourceHandler_3300_5751().main()

@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+# -*- encoding: utf-8 -*-
+
+from fsdm import InstancesHandler, CoapError
+
+
+class InstancesHandler_3300(InstancesHandler):
+    EXTERNAL_NOTIFY = False
+
+    def create(self,
+               instance_id):  # int
+        raise CoapError.NOT_IMPLEMENTED
+
+    def delete(self,
+               instance_id):  # int
+        raise CoapError.NOT_IMPLEMENTED
+
+    def list(self):
+        print("0 1 2")
+
+
+if __name__ == '__main__':
+    InstancesHandler_3300().main()

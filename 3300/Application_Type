@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+# -*- encoding: utf-8 -*-
+
+from fsdm import ResourceHandler, CoapError, DataType, KvStore
+
+
+class ResourceHandler_3300_5750(ResourceHandler):
+    NAME = "Application Type"
+    DESCRIPTION = '''\
+The application type of the sensor or actuator as a string depending
+ * on the use case.'''
+    DATATYPE = DataType.STRING
+    EXTERNAL_NOTIFY = False
+
+    def read(self,
+             instance_id,            # int
+             resource_instance_id):  # int for multiple resources, None otherwise
+        # print value to stdout
+        if instance_id == 0:
+            print("Measures how much the solar panels are faced towards the sun and indicates the power of battery charging.")
+            return
+        elif instance_id == 1:
+            print("Recongnizes the planet we are on")
+            return
+        elif instance_id == 2:
+            print("Recognizes how many astronauts are on the spaceship")
+            return
+        print("No such instance")
+        return
+
+
+    def write(self,
+              instance_id,            # int
+              resource_instance_id):  # int for multiple resources, None otherwise
+        # TODO: read value from stdin
+        raise CoapError.NOT_IMPLEMENTED
+
+    def reset(self,
+              instance_id):  # int
+        # TODO: reset resource to its original state. You can either set it to
+        # a default value or delete the resource.
+        pass
+
+
+
+if __name__ == '__main__':
+    ResourceHandler_3300_5750().main()
+
