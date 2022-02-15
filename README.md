@@ -3,7 +3,7 @@ Project for IoT lessons at AGH UST.
 
 We've been given a Raspberry Pi with Sense Hat detectors used for Astro Pi projects.
 Project assumes setting our Pi as a LWM2M server and exposing some made-up astro resources.
-There has been defined and exposed one LWM2M object with three instances corresponding to following resources:
+There has been defined and exposed one LWM2M object (3300, Generic Sensor) with three instances corresponding to following resources:
 - Number of astronauts on the ship (uses camera to take a picture and OpenCV to detect people at it)
 - Level of charging power (Astro-ship batteries are charged using solar panels and we're exposing how much does the ship is faced towards the sun)
 - Planet we are currently at (using atmospheric data collected by sensors)
