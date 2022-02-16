@@ -17,7 +17,7 @@ Implementation of these resources takes place in python files called ResourceHan
 
 # Project in action
 The svetovid service has to be enabled at the Raspberry Pi. (https://github.com/AVSystem/Svetovid-raspberry-client)
-Then a web browser LWM2M client Coyote can connect to this device and read values from our generic and other basic sensors.
+Then a web browser LWM2M service Coyote (https://www.avsystem.com/products/coiote-iot-device-management-platform) can connect to this device and read values from our generic and other basic sensors.
 
 
 # Authors
