@@ -23,4 +23,7 @@ Then a web browser LWM2M client Coyote can connect to this device and read value
 # Authors
 - Krzystof Siekierzyński (https://github.com/ksiek127)
 - Tomasz Koszarek (https://github.com/koszar91)
-
+- Szymon Rynkownski (https://github.com/rynkow)
+- Jakub Koźlak (https://github.com/kkoz3434)
+- Kamil Pluciński (https://github.com/K4m1lP)
+- Paweł Holowicki (https://github.com/Gajkes)
